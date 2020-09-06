@@ -15,9 +15,9 @@ https://play.google.com/store/apps/details?id=zoeknow.com.funnow
 預覽
 --------
 <p align="left">
-  <img src="https://i.imgur.com/jMg7zSk.png" width="330"/>
-  <img src="https://i.imgur.com/qTetOBq.png" width="330"/>
-  <img src="https://i.imgur.com/rL4JJfR.png" width="330"/>
+  <img src="https://i.imgur.com/jMg7zSk.png" width="270"/>
+  <img src="https://i.imgur.com/qTetOBq.png" width="270"/>
+  <img src="https://i.imgur.com/rL4JJfR.png" width="270"/>
 </p> 
 
 備註
