@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".explore.ExploreActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/icon_explore"
+        tools:ignore="ContentDescription" />
+
+    <View
+        android:id="@+id/view_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/view_service_bar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_weight="32" />
+
+    <View
+        android:id="@+id/view_service_bar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/view_blank"
+        app:layout_constraintTop_toBottomOf="@+id/view_top_bar"
+        app:layout_constraintVertical_weight="17" />
+
+    <View
+        android:id="@+id/view_service_bar_blank"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view_service_bar"
+        app:layout_constraintEnd_toStartOf="@+id/view_service_bar_service"
+        app:layout_constraintHorizontal_weight="5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view_service_bar" />
+
+    <View
+        android:id="@+id/view_service_bar_service"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view_service_bar"
+        app:layout_constraintEnd_toStartOf="@+id/view_service_bar_blank2"
+        app:layout_constraintHorizontal_weight="32"
+        app:layout_constraintStart_toEndOf="@+id/view_service_bar_blank"
+        app:layout_constraintTop_toTopOf="@+id/view_service_bar" />
+
+    <View
+        android:id="@+id/view_service_bar_blank2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view_service_bar"
+        app:layout_constraintEnd_toStartOf="@+id/view_service_bar_business"
+        app:layout_constraintHorizontal_weight="2"
+        app:layout_constraintStart_toEndOf="@+id/view_service_bar_service"
+        app:layout_constraintTop_toTopOf="@+id/view_service_bar" />
+
+    <View
+        android:id="@+id/view_service_bar_business"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view_service_bar"
+        app:layout_constraintEnd_toStartOf="@+id/view_service_bar_blank3"
+        app:layout_constraintHorizontal_weight="31"
+        app:layout_constraintStart_toEndOf="@+id/view_service_bar_blank2"
+        app:layout_constraintTop_toTopOf="@+id/view_service_bar" />
+
+    <View
+        android:id="@+id/view_service_bar_blank3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view_service_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="8"
+        app:layout_constraintStart_toEndOf="@+id/view_service_bar_business"
+        app:layout_constraintTop_toTopOf="@+id/view_service_bar" />
+
+    <View
+        android:id="@+id/view_blank"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/view_12h_bar"
+        app:layout_constraintTop_toBottomOf="@+id/view_service_bar"
+        app:layout_constraintVertical_weight="2" />
+
+    <View
+        android:id="@+id/view_12h_bar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/view_bottom_bar"
+        app:layout_constraintTop_toBottomOf="@+id/view_blank"
+        app:layout_constraintVertical_weight="17" />
+
+    <View
+        android:id="@+id/view_12h_bar_blank"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view_12h_bar"
+        app:layout_constraintEnd_toStartOf="@+id/view_12h_bar_12h"
+        app:layout_constraintHorizontal_weight="5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view_12h_bar" />
+
+    <View
+        android:id="@+id/view_12h_bar_12h"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view_12h_bar"
+        app:layout_constraintEnd_toStartOf="@+id/view_12h_bar_blank2"
+        app:layout_constraintHorizontal_weight="32"
+        app:layout_constraintStart_toEndOf="@+id/view_12h_bar_blank"
+        app:layout_constraintTop_toTopOf="@+id/view_12h_bar" />
+
+    <View
+        android:id="@+id/view_12h_bar_blank2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view_12h_bar"
+        app:layout_constraintEnd_toStartOf="@+id/view_12h_bar_chill"
+        app:layout_constraintHorizontal_weight="2"
+        app:layout_constraintStart_toEndOf="@+id/view_12h_bar_12h"
+        app:layout_constraintTop_toTopOf="@+id/view_12h_bar" />
+
+    <View
+        android:id="@+id/view_12h_bar_chill"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view_12h_bar"
+        app:layout_constraintEnd_toStartOf="@+id/view_12h_bar_blank3"
+        app:layout_constraintHorizontal_weight="31"
+        app:layout_constraintStart_toEndOf="@+id/view_12h_bar_blank2"
+        app:layout_constraintTop_toTopOf="@+id/view_12h_bar" />
+
+    <View
+        android:id="@+id/view_12h_bar_blank3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view_12h_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="8"
+        app:layout_constraintStart_toEndOf="@+id/view_12h_bar_chill"
+        app:layout_constraintTop_toTopOf="@+id/view_12h_bar" />
+
+    <View
+        android:id="@+id/view_bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_12h_bar"
+        app:layout_constraintVertical_weight="47" />
+</androidx.constraintlayout.widget.ConstraintLayout>
